@@ -1,0 +1,14 @@
+import MVF.*
+program MiVillanoFavorito {
+	var rayo = new Arma("rayo congelante",10)
+	var minion = new Minion(5,rayo)
+	minion.tomarSueroMutante()
+	console.println(minion)
+	var gru = new Villano()
+	gru.nuevoMinion(minion)
+	var buenosAires = new Ciudad(45)
+	gru.congelar(4,buenosAires)
+	gru.robarPiramide(buenosAires,4)
+	console.println(buenosAires)
+	console.println(gru.mejorMinion())
+}
